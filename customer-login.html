@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Customer Login | V Tech Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body{background:linear-gradient(120deg,#003333,#001f1f);min-height:100vh;display:grid;place-items:center;color:#e9fbfb}
+    .card{background:#012828;border:1px solid #0b4b4b;color:#e9fbfb;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .btn-warning{background:#FFC34D;border:none;font-weight:700}
+    a.logo{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:#fff;justify-content:center;margin-bottom:10px}
+    a.logo svg{height:36px}
+  </style>
+</head>
+<body>
+  <div class="container" style="max-width:420px">
+    <a class="logo" href="index.html" aria-label="V Tech Solutions">
+      <svg viewBox="0 0 128 40"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#FFCC66"/><stop offset="1" stop-color="#FFD98C"/></linearGradient></defs><path d="M8 32 L22 8 h8 L52 32 h-9l-5.4-9.8L32.2 14 18.6 32H8z" fill="url(#g)"/><circle cx="60" cy="20" r="5" fill="#90e0df"/><rect x="69" y="14" width="4" height="12" rx="2" fill="#aef1f0"/><rect x="76" y="11" width="4" height="15" rx="2" fill="#c4fbfb"/></svg>
+      <strong>V TECH SOLUTIONS</strong>
+    </a>
+    <div class="card p-4">
+      <h3 class="text-center mb-3"><i class="bi bi-person-badge me-2"></i>Customer Login</h3>
+      <form onsubmit="event.preventDefault(); alert('Customer login submitted (demo).');">
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="you@company.com" required>
+        </div>
+        <div class="mb-2">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="remember2">
+            <label class="form-check-label" for="remember2">Remember me</label>
+          </div>
+          <a href="#" class="link-light">Forgot password?</a>
+        </div>
+        <button class="btn btn-warning w-100 btn-lg">Sign In</button>
+      </form>
+      <div class="text-center mt-3">
+        <a class="link-light" href="index.html"><i class="bi bi-arrow-left me-1"></i>Back to site</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
